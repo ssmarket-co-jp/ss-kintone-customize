@@ -1,0 +1,33 @@
+/*
+ポータルのお知らせに出現する謎の高さの乱れを消去
+*/
+div.ocean-portal-announcement-text h1 {
+  margin: 0;
+}
+
+/*
+カスタマインの「一覧画面にキーワードで検索する検索フォームを設置する」の選択リストの高さを揃える
+*/
+div.customineform-multi-select {
+  min-height: 120px;
+}
+
+/*
+カスタマインの「レコードの一覧をスペースに表示する」の高さと幅の調節
+*/
+/* 列数が少ない場合でもある程度の幅を確保してガタつきを軽減する */
+.customine-record-table-frame table {
+  min-width: 400px; 
+}
+/* テキストフィールドの横幅が極端に短くなるのを軽減する */
+.customine-record-table-frame th.subtable-label-gaia.SINGLE_LINE_TEXT {
+  min-width: 80px; 
+}
+
+/*
+カスタマインの「フィールドに吹き出しを設定する」のアイコン
+*/
+button.customine-tooltip-button {
+  background-color: #3498db;
+  padding: 1px 0 0 0;
+}
