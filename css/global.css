@@ -5,6 +5,13 @@ div.ocean-portal-announcement-text h1 {
   margin: 0;
 }
 
+/* 
+必須フィールドの入力漏れをわかりやすくする 
+*/
+div.control-gaia:has(div.input-error-cybozu) {
+  background-color: #fadbda;
+}
+
 /*
 カスタマインの「一覧画面にキーワードで検索する検索フォームを設置する」の選択リストの高さを揃える
 */
