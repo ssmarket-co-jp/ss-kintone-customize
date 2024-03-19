@@ -20,6 +20,13 @@ div.customineform-multi-select {
 }
 
 /*
+関連レコードの複数行フィールドの最低限の横幅を確保する
+*/
+th.subtable-label-gaia.subtable-label-multiple_line_text-gaia {
+  min-width: 300px; 
+}
+
+/*
 カスタマインの「レコードの一覧をスペースに表示する」の高さと幅の調節
 */
 /* 列数が少ない場合でもある程度の幅を確保してガタつきを軽減する */
