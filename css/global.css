@@ -20,10 +20,17 @@ div.customineform-multi-select {
 }
 
 /*
+関連レコードのテキストフィールドの最低限の横幅を確保する
+*/
+th.subtable-label-gaia.subtable-label-single_line_text-gaia {
+  min-width: 120px; 
+}
+
+/*
 関連レコードの複数行フィールドの最低限の横幅を確保する
 */
 th.subtable-label-gaia.subtable-label-multiple_line_text-gaia {
-  min-width: 300px; 
+  min-width: 400px; 
 }
 
 /*
