@@ -1,0 +1,4 @@
+/* 吹き出しが画面下部に表示される現象の対応 */
+.customine-tooltip.fixed{
+    position:absolute !important;
+  }
