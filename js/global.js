@@ -13,8 +13,8 @@
     const URL_EDIT = '/edit'
     /** 編集 */
     const URL_MODE_EDIT = 'mode=edit'
-    /** 詳細 */
-    const URL_MODE_SHOW = 'mode=show'
+    /** 詳細、編集 */
+    const URL_SHOW = '/show'
 
     /** キーボードショートカットイベント */
     const keyboardShortcutEvents = [];
@@ -95,4 +95,28 @@
         const navNtf = document.querySelector(`a[href="${URL_NOTIFICATION}/mention"]`);
         if (navNtf) navNtf.click();
     },[],[URL_MODE_EDIT,URL_EDIT]);
+    //  「y」
+    addKeyboardShortcutEvent(['y'],(key,e)=>{
+        // タブ移動（左）
+        const customineTabButtons = document.getElementsByClassName('customine-tab-button');
+        if (customineTabButtons){
+            const buttonsArray = Array.from(customineTabButtons);
+            const activeButton = document.querySelector('.customine-tab-button.active');
+            const activeIndex = buttonsArray.indexOf(activeButton);
+            const previousButton = activeIndex > 0 ? buttonsArray[activeIndex - 1] : null;
+            if (previousButton) previousButton.click();
+        }
+    },[URL_SHOW,URL_EDIT]);
+    //  「u」
+    addKeyboardShortcutEvent(['u'],(key,e)=>{
+        // タブ移動（右）
+        const customineTabButtons = document.getElementsByClassName('customine-tab-button');
+        if (customineTabButtons){
+            const buttonsArray = Array.from(customineTabButtons);
+            const activeButton = document.querySelector('.customine-tab-button.active');
+            const activeIndex = buttonsArray.indexOf(activeButton);
+            const nextButton = activeIndex < buttonsArray.length - 1 ? buttonsArray[activeIndex + 1] : null;
+            if (nextButton) nextButton.click();
+        }
+    },[URL_SHOW,URL_EDIT]);
 })();
