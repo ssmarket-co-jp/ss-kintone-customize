@@ -13,13 +13,6 @@ div.control-gaia:has(div.input-error-cybozu) {
 }
 
 /*
-カスタマインの「一覧画面にキーワードで検索する検索フォームを設置する」の選択リストの高さを揃える
-*/
-div.customineform-multi-select {
-  min-height: 120px;
-}
-
-/*
 関連レコードのテキストフィールドの最低限の横幅を確保する
 */
 th.subtable-label-gaia.subtable-label-single_line_text-gaia {
@@ -31,6 +24,23 @@ th.subtable-label-gaia.subtable-label-single_line_text-gaia {
 */
 th.subtable-label-gaia.subtable-label-multiple_line_text-gaia {
   min-width: 400px; 
+}
+
+/* 
+ファイル書き出しのフィールド選択欄の高さを大きくする
+*/
+div#view-labels-gaia {
+  height: 400px;
+}
+div.main-inner-gaia.droppable-cybozu {
+  height: 400px;
+}
+
+/*
+カスタマインの「一覧画面にキーワードで検索する検索フォームを設置する」の選択リストの高さを揃える
+*/
+div.customineform-multi-select {
+  min-height: 120px;
 }
 
 /*
